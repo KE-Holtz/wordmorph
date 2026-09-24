@@ -13,8 +13,8 @@ fn main() {
         println!("Pick a word length:");
         let len = user_input();
         len_as_num = len.trim().parse().expect("Not a number");
-        let filename_all = format!("/home/KE-Holtz/Projects/wordmorph/wordlists/{}_len_words.txt", len.trim());
-        let filename_common = format!("/home/KE-Holtz/Projects/wordmorph/common_wordlists/{}_len_words.txt", len.trim());
+        let filename_all = format!("./wordlists/{}_len_words.txt", len.trim());
+        let filename_common = format!("./common_wordlists/{}_len_words.txt", len.trim());
 
         let path_all = Path::new(&filename_all);
         let path_common = Path::new(&filename_common);
